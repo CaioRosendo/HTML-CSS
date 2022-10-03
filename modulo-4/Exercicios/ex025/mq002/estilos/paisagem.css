@@ -1,3 +1,8 @@
 @charset "UTF-8";
 
 /*TELA DEITADA - PAISAGEM*/
+
+body {
+    background-image: url(../Imagens/cev-landscape.jpg);
+    background-position: left bottom;
+}
