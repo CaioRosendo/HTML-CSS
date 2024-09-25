@@ -16,16 +16,11 @@
             margin: 10px auto;
             text-align: center;
         }
-        main{
-            background-color: white;
-            padding: 10px;
-            margin: 10px auto;
-            text-align: justify;
-        }
+
         nav{
             background-color:rgb(67, 67, 67);
             padding: 3px;
-            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.288); 
+            box-shadow: 3px 2px 7px 1px rgba(0, 0, 0, 0.288); 
         }
         nav > a {
             text-decoration: none;
@@ -36,12 +31,21 @@
         nav > a:hover {
             text-decoration: underline;
         }
+        main{
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            margin: 10px auto;
+            text-align: justify;
+            border-radius: 10px 0px;
+            box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.278);
+        }
         article{
             background-color: lightgray;
         }
         article > aside{
-            background-color: rgb(144, 141, 141);
+            background-color: rgb(137, 134, 134);
             text-align: center;
+            
         }
         footer{
             background-color: black;
@@ -49,15 +53,42 @@
             text-align: center;
             padding: 4px;
             margin: 0px;
-            border-radius: 15px;
+            border-radius: 3px;
         }
+
+         footer > a {
+            text-decoration: none;
+            color: white;
+        }
+        footer > a:hover {
+            text-decoration: underline;
+            font-style: italic;
+        }
+
        div#bola{
         height: 120px;
         width: 120px;
         background-color: white;
-        margin: 5px auto;
+        margin: 10px auto;
         border-radius: 50%;
        }
+
+       div > p {
+        margin: auto;
+        text-align: center;
+        font-size: 1.5em;
+        font-family: Arial, Helvetica, sans-serif;
+
+       }
+
+       div > p > a {
+        text-decoration: none;
+       }
+
+       div > p a:hover {
+            text-decoration: underline;
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
@@ -77,16 +108,20 @@
         <section id="notícias">
             <article>
                 <h2>Notícia 01</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et cumque veniam iste neque laborum, qui omnis, tempore id, at voluptate suscipit incidunt totam nesciunt repellat. Sed id pariatur quidem. Inventore.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et cumque veniam iste neque laborum, qui omnis, tempore id, at voluptate suscipit incidunt totam nesciunt repellat. Sed id pariatur quidem. Inventore.
+                </p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum blanditiis nam dolore. Nostrum odit, atque voluptate doloribus accusamus eaque, a nulla ducimus vel dolores excepturi, facilis corporis consectetur modi quo?</p>
                 <aside>
-                    <p>Artigo escrito por José</p>
+                    <p>Artigo escrito por João</p>
                 </aside>
             </article>
         </section>
     </main> 
     <footer>
-        Desenvolvido por Caio Henrique
+        Desenvolvido por <a href="https://www.instagram.com/caiorosendo_/" target="_blank">Caio Henrique</a>
     </footer> 
-    <div id="bola"></div> 
+    <div id="bola">
+        <p><br><a href="https://www.instagram.com/caiorosendo_/" target="_blank"> C.H <br>7</a></p>
+    </div> 
 </body>
 </html>
