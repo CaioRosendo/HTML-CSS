@@ -2,54 +2,29 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulário</title>
 </head>
 <body>
-    <h1>Exemplo de Formulário 05</h1>
+    <h1>Exemplo do formulário</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+                <label for="isxmas"><input type="radio" name="sexo" id="isxmax">Masculino</label> <br>
+                <label for="isxfem"><input type="radio" name="sexo" id="isxfem">Feminino</label>
+        </fieldset>
 
-    <fieldset>
-        <legend>Sexo</legend>
-        <input type="radio" name="sexo" id="imasc" value="M"> <label for="imasc">Masculino</label>
-        <input type="radio" name="sexo" id="ifem" value="F"> <label for="ifem">Feminino</label>
-    </fieldset>
-
-    <fieldset>
-        <legend>Esportes Favoritos</legend>
-        <input type="checkbox" name="fut" id="ifut"> <label for="ifut">Futebol</label> <br>
-        <input type="checkbox" name="bas" id="ibas"> <label for="ibas">Basquete</label> <br>
-        <input type="checkbox" name="vol" id="ivol"><label for="ivol">Volei</label>
-    </fieldset>
-
-    <p>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Limpar">
-    </p>
-</form>
-
-    <h1>Formulário 06</h1>
-<form action="cadastro.php" method="post" autocomplete="on">
-    <p>
-        <label for="icor">Cor</label>
-        <input type="color" name="cor" id="icor">
-    </p>
-
-    <p>
-        <label for="inivel">Nivel de satisfação</label>
-        <input type="range" name="nivel" id="inivel" min="0" max="10">
-    </p>
-
-    <p>
-        <label for="ifoto">Foto do perfil</label>
-        <input type="file" name="foto" id="ifoto">
-    </p>
-
-    <p>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Limpar">
-    </p>
-</form>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <label for="iesfut"><input type="checkbox" name="esfut" id="iesfut" checked>Futebol</label> 
+            <label for="iesnat"><input type="checkbox" name="esnat" id="iesnat">Natação</label>
+            <label for="iesbas"><input type="checkbox" name="esbas" id="iesbas">Basquete</label>
+            <label for="iesten"><input type="checkbox" name="esten" id="iesten">Tenis</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
 </body>
 </html>
