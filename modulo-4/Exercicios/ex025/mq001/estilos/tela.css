@@ -12,27 +12,50 @@ html {
 }
 
 header {
-    background-color: rgba(211, 211, 211, 0.575);
+    background-color: lightgray;
 }
 
 header > h1 {
     text-align: center;
-    color: rgb(163, 10, 10);
+    background-color: lightgrey;
+    color: rgb(0, 0, 0);
 }
 
 menu ul {
+    background-image: linear-gradient(transparent, rgb(148, 147, 147));
     list-style-type: none;
-    background-color: gray;
 }
 
 menu li {
     display: inline-block;
     padding: 10px;
+    background-color: rgb(80, 80, 80);
+    
+}
+
+menu a {
+    color: white;
+    text-decoration: none;
+}
+
+menu a:hover {
+    text-decoration: underline;
+    font-style: italic;
 }
 
 article {
-    width: 600px;
-    text-align: justify;
-    display: block;
+    width: 500px;
     margin: auto;
+    padding: 10px;
+}
+
+article h2 {
+    text-align: center;
+    padding: 10px;
+}
+
+article > p {
+    line-height: 2em;
+    text-indent: 4em;
+    text-align: justify;
 }
