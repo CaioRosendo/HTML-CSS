@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Exemplo do formulário</h1>
-    <form action="cadastro.php" method="get" autocomplete="on">
+    <form action="cadastro.php" method="post" autocomplete="on">
         <fieldset>
             <legend>Sexo</legend>
                 <label for="isxmas"><input type="radio" name="sexo" id="isxmax" value="M">Masculino</label> <br>
@@ -25,6 +25,27 @@
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
+
+        <h1>Exemplo de formulário</h1>
+        <p>
+            <label for="inivel">Nível de satisfação</label>
+            <input type="range" name="nivel" id="inivel" min="1" max="10">
+        </p>
+        <p>
+            <label for="icor">Cor</label>
+            <input type="color" name="cor" id="icor" value="#00ff00">
+        </p>
+        
+        <p>
+            <label for="ifoto">Foto do Perfil</label>
+            <input type="file" name="foto" id="ifoto">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
     </form>
 </body>
 </html>
