@@ -2,17 +2,16 @@
 
 /* Todas as demais mídias */
 
-/*Pesquisar TYPICAL DECIDE BREAKPOINTS, para saber o tamanho das telas*/
+/*Pesquisar TYPICAL DEVICE BREAKPOINTS, para saber o tamanho das telas*/
 
-@media print { /*impressão*/
+@media print {
     body {
-        background-image:url(../imagens/back-print.jpg);/*desnecessário*/
         font-family: 'Courier New', Courier, monospace;
     }
 
-    main {
-        width: 95vw;
+    main{
         border: 2px solid black;
+        width: 85vw;
     }
 
     main h1 {
@@ -21,7 +20,7 @@
     }
 
     main::after {
-        content: 'essa impressão foi feita atraves do site...';
+        content: 'Impressão feita pra testar Media Queries';
         text-decoration: overline;
     }
 
@@ -32,7 +31,7 @@
     img#tv {display: none;}
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) { /*tablet*/
+@media screen and (min-width: 768px) and (max-width: 1025px){ /*tablet*/
     body {
         background-image: url(../imagens/back-tablet.jpg);
     }
@@ -42,9 +41,9 @@
     img#print {display: none;}
     img#pc {display: none;}
     img#tv {display: none;}
-}
+ }
 
-@media screen and (min-width: 992px) and (max-width: 1200px) { /*desktop*/
+@media screen and (min-width:1025px) and (max-width:1280px) {/*desktop*/
     body {
         background-image: url(../imagens/back-pc.jpg);
     }
@@ -53,18 +52,17 @@
     img#print {display: none;}
     img#pc {display: block;}
     img#tv {display: none;}
-}
 
-@media screen and (min-width: 1200px) { /*grandes telas*/
-    body {
+ }
+
+@media screen and (min-width: 1280px) { /*grandes telas*/
+    body{
         background-image: url(../imagens/back-tv.jpg);
     }
-
-    main {width: 700px;}
 
     img#phone {display: none;}
     img#tablet {display: none;}
     img#print {display: none;}
     img#pc {display: none;}
     img#tv {display: block;}
-}
+ }
