@@ -2,18 +2,15 @@
 
 @media screen and (min-width: 768px) {
     span#burger {
-        display: none;
+        display:none
     }
-
     menu {
         display: block;
     }
-
-    menu > ul > li {
+    menu li {
         display: inline-block;
     }
-
     main {
-        width: 800px;
+        width: 768px;
     }
 }
